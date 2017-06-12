@@ -4,11 +4,13 @@ import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 
-class PurineCalculatorDatabaseHelper(context: Context) : SQLiteOpenHelper(
+class PurineCalculatorDatabaseHelper(val context: Context) : SQLiteOpenHelper(
         context,
         DATABASE_NAME,
         null,
         DATABASE_VERSION) {
+
+
 
     companion object {
         val DATABASE_NAME = "purine_calculator.db"
@@ -16,7 +18,7 @@ class PurineCalculatorDatabaseHelper(context: Context) : SQLiteOpenHelper(
     }
 
     override fun onCreate(database: SQLiteDatabase) {
-
+        this.context.resources.raw
     }
 
     override fun onUpgrade(database: SQLiteDatabase, i: Int, i1: Int) {
