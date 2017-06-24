@@ -1,4 +1,4 @@
-package pl.kacper90.purinecalculator.dao
+package pl.kacper90.purinecalculator.entity
 
 import android.arch.persistence.room.ColumnInfo
 import android.arch.persistence.room.Entity
