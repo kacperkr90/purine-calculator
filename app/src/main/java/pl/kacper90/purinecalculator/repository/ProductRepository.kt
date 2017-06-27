@@ -1,7 +1,7 @@
 package pl.kacper90.purinecalculator.repository
 
 import android.arch.lifecycle.LiveData
-import pl.kacper90.purinecalculator.dao.ProductDao
+import pl.kacper90.purinecalculator.db.ProductDao
 import pl.kacper90.purinecalculator.entity.Product
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -22,7 +22,7 @@ class ProductRepository @Inject constructor(val productDao: ProductDao) {
     }
 
     fun delete(product: Product): Unit {
-         delete(product)
+         productDao.delete(product)
     }
 
 }

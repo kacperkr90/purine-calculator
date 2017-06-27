@@ -1,4 +1,4 @@
-package pl.kacper90.purinecalculator.dao
+package pl.kacper90.purinecalculator.db
 
 import android.arch.lifecycle.LiveData
 import android.arch.persistence.room.Dao
